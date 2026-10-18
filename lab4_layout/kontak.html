@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="kontak.html" class="active">Kontak</a>
+        </nav>
+        <section id="hero">
+            <h1>Hubungi Kami</h1>
+            <p>Silakan isi form di bawah ini untuk mengirim pesan.</p>
+            
+        </section>
+        <section id="wrapper">
+            <section id="main">
+                <h2>Form Kontak</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input type="text" id="nama" name="nama" placeholder="Nama lengkap" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subjek">Subjek</label>
+                        <select id="subjek" name="subjek">
+                            <option>Pertanyaan</option>
+                            <option>Saran</option>
+                            <option>Kerja sama</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan</label>
+                        <textarea id="pesan" name="pesan" placeholder="Tulis pesan kamu..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Pesan</button>
+                </form>
+            </section>
+            <aside id="sidebar">
+                <div class="widget-box">
+                    <h3 class="title">Info Kontak</h3>
+                    <ul>
+                        <li><a href="#">Universitas Pelita Bangsa, Bekasi</a></li>
+                        <li><a href="mailto:nycila28@gmail.com">Email: nycila28@gmail.com</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+    </div>
+</body>
+
+</html>
